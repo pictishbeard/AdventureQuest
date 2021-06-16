@@ -4,6 +4,7 @@ import behaviours.IAttackEnemy;
 import behaviours.IDefendPlayer;
 import enemy.Orc;
 import weapons.Weapon;
+import enemy.Enemy;
 
 public class Fighter extends Player implements IAttackEnemy, IDefendPlayer {
 
@@ -18,7 +19,7 @@ public class Fighter extends Player implements IAttackEnemy, IDefendPlayer {
 
     @Override
     public void attack(Enemy enemy) {
-       enemy.takeDamage(weapon.getAttackValue());
+       enemy.takeDamage(weapon.getAttackValue() );
     }
 
     public void defend(Orc orc){

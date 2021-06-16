@@ -1,6 +1,7 @@
 package player;
 
 import weapons.Weapon;
+import enemy.Enemy;
 
 public class Barbarian extends Fighter {
 

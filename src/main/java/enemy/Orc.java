@@ -17,4 +17,8 @@ public class Orc extends Enemy implements IAttackPlayer {
         player.takeDamage(weapon.getAttackValue());
     }
 
+    public Weapon getWeapon(){
+        return this.weapon;
+    }
+
 }
