@@ -1,10 +1,11 @@
 package player;
 
 import behaviours.IAttackEnemy;
-import enemy.Enemy;
+import behaviours.IDefendPlayer;
+import enemy.Orc;
 import weapons.Weapon;
 
-public class Fighter extends Player implements IAttackEnemy {
+public class Fighter extends Player implements IAttackEnemy, IDefendPlayer {
 
 
     private final Weapon weapon;
@@ -18,6 +19,10 @@ public class Fighter extends Player implements IAttackEnemy {
     @Override
     public void attack(Enemy enemy) {
        enemy.takeDamage(weapon.getAttackValue());
+    }
+
+    public void defend(Orc orc){
+        this.takeDamage(orc.getWeapon().getAttackValue() / 2);
     }
 
 }

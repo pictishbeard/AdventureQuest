@@ -8,8 +8,8 @@ public class Orc extends Enemy implements IAttackPlayer {
 
     private Weapon weapon;
 
-    public Orc(int hitPoints, Weapon weapon) {
-        super(hitPoints);
+    public Orc(String name, int hitPoints, Weapon weapon) {
+        super(name, hitPoints);
         this.weapon = weapon;
     }
 

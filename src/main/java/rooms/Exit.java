@@ -7,7 +7,6 @@ public enum Exit {
     EXIT3("North"),
     EXIT4("South");
 
-
     public String direction;
 
     Exit(String direction) {
@@ -18,6 +17,5 @@ public enum Exit {
         return this.direction;
     }
 
-
-    }
+}
 

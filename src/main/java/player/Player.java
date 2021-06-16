@@ -25,4 +25,11 @@ public abstract class Player {
     public void takeDamage(int damage) {
         this.hitPoints -= damage;
     }
+
+    public void heal(){
+        if (this.hitPoints + 20 > 100){
+            this.hitPoints = 100;
+        }
+        this.hitPoints += 20;
+    }
 }

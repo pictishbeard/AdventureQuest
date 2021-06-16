@@ -4,7 +4,8 @@ public abstract class Enemy {
 
         private int hitPoints;
 
-        public Enemy(int hitPoints) {
+        public Enemy(String name, int hitPoints) {
+                this.name = name;
                 this.hitPoints = hitPoints;
         }
 

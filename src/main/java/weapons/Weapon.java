@@ -9,6 +9,6 @@ public abstract class Weapon {
     }
 
     public int getAttackValue() {
-        return attackValue;
+        return this.attackValue;
     }
 }

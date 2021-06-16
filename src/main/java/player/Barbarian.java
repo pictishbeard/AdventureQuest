@@ -4,7 +4,6 @@ import weapons.Weapon;
 
 public class Barbarian extends Fighter {
 
-
     private Weapon weapon;
 
     public Barbarian(String name, int hitPoints, Weapon weapon) {
@@ -14,5 +13,9 @@ public class Barbarian extends Fighter {
     public void setWeapon(Weapon newWeapon){
         this.weapon = newWeapon;
     }
-    
+
+    public Weapon getWeapon(){
+        return this.weapon;
+    }
+
 }
