@@ -7,8 +7,9 @@ public class Troll extends Enemy {
 
     private Weapon weapon;
 
-    public Troll(int hitPoints, Weapon weapon) {
-        super(hitPoints);
+    public Troll(String name, int hitPoints, Weapon weapon) {
+        super(name, hitPoints);
+        this.weapon = weapon;
     }
 
     public void attack(Player player) {
